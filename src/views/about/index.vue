@@ -25,9 +25,20 @@
       <div
         v-for="value in values"
         :key="value"
-        class="flex flex-col items-center lg:w-1/4 justify-center p-4 flex-shrink-0"
+        class="
+          flex flex-col
+          items-center
+          lg:w-1/4
+          justify-center
+          p-4
+          flex-shrink-0
+        "
       >
-        <img src="@/assets/icons/check-icon.svg" alt="" class="w-16 h-16 mb-4" />
+        <img
+          src="@/assets/icons/check-icon.svg"
+          alt=""
+          class="w-16 h-16 mb-4"
+        />
         <h3 class="text-xl w-48 text-center">{{ value }}</h3>
       </div>
     </div>

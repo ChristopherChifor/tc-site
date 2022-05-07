@@ -28,7 +28,7 @@ h3 {
 }
 
 h4 {
-  @apply bg-gradient-to-r from-accent-light to-accent bg-clip-text text-transparent;
+  @apply text-2xl md:text-xl font-semibold text-accent-hover mb-4 md:mb-6;
 }
 
 p {
