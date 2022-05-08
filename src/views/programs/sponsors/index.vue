@@ -4,8 +4,6 @@
     description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Senectus molestie congue sit consectetur metus consectetur montes, amet."
   />
 
-  
-
   <Container>
     <h2 class="text-center font-bold -mt-5">A Shoutout To Our 2022 Sponsors</h2>
     <p class="text-center px-10">
@@ -21,7 +19,7 @@
         <div v-for="name in Sponsors" :key="name" class="flex">
           <div class="flex">
             <img src="@/assets/icons/star.svg" alt="" class="w-4 h-4" />
-            <h3 class="text-xs text-center ml-2 text-accent">{{ name }}</h3>
+            <h3 class="text-sm text-center ml-2 text-accent">{{ name }}</h3>
           </div>
         </div>
       </div>
@@ -29,7 +27,7 @@
         <div v-for="name in Sponsors" :key="name" class="flex">
           <div class="flex">
             <img src="@/assets/icons/star.svg" alt="" class="w-4 h-4" />
-            <h3 class="text-xs text-center ml-2 text-accent">{{ name }}</h3>
+            <h3 class="text-sm text-center ml-2 text-accent">{{ name }}</h3>
           </div>
         </div>
       </div>
@@ -37,7 +35,7 @@
         <div v-for="name in Sponsors" :key="name" class="flex">
           <div class="flex">
             <img src="@/assets/icons/star.svg" alt="" class="w-4 h-4" />
-            <h3 class="text-xs text-center ml-2 text-accent">{{ name }}</h3>
+            <h3 class="text-sm text-center ml-2 text-accent">{{ name }}</h3>
           </div>
         </div>
       </div>
@@ -45,7 +43,7 @@
         <div v-for="name in Sponsors" :key="name" class="flex">
           <div class="flex">
             <img src="@/assets/icons/star.svg" alt="" class="w-4 h-4" />
-            <h3 class="text-xs text-center ml-2 text-accent">{{ name }}</h3>
+            <h3 class="text-sm text-center ml-2 text-accent">{{ name }}</h3>
           </div>
         </div>
       </div>
