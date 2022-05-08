@@ -21,6 +21,8 @@
             text-white
             sm:text-5xl
             lg:text-6xl
+            w-24
+            break-text
           "
         >
           {{ title }}
