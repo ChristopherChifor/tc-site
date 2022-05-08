@@ -23,19 +23,29 @@
     <Container>
       <div class="flex flex-wrap justify-between md: gap-10">
         <div
-          v-for="donation in donations"
-          :key="donation"
+          v-for="(item, index) in icons"
+          :key="index"
           class="flex flex-col items-center justify-center flex-shrink-0"
         >
           <img
-            src="@/assets/images/staff-lady.png"
-            alt="Staff member"
-            class="w-16 h-16 mb-4 rounded-full object-cover"
+            :src="item.image"
+            :key="index"
+            alt=""
+            class="w-16 h-16 mb-4 "
           />
-          <h3 class="text-xl w- text-center text-accent">{{ donation }}</h3>
+          <h3 class="text-xl w- text-center">{{ item.title }}</h3>
         </div>
       </div>
     </Container>
+    <h2>What Do We Not Accept?</h2>
+    <ArrowList
+      :items="[content[0], content[1], content[0], content[1], content[0]]"
+      class="mb-6"
+    />
+    <h2>What happens to Donated Materials?</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat a leo sit amet commodo. Ut ac tempus leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean nibh libero, malesuada non semper id, tempus vitae turpis. Donec tristique elementum odio sit amet interdum. Quisque molestie metus sed auctor molestie.
+    </p>
   </Container>
 </template>
 
@@ -46,12 +56,30 @@ import Header from "@/components/base/Header";
 import { ArrowRightIcon } from "@heroicons/vue/solid";
 
 const content = [
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, accusamus!",
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, accusamus!",
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, accusamus!",
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, accusamus!",
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, accusamus!",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat a leo sit amet commodo. Ut ac tempus leo. Class aptent taciti sociosqu ad",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat a leo sit amet commodo. Ut ac tempus leo. Class aptent taciti sociosqu ad",
 ];
+
+const BASE_URL = "/teck-centennial-website/"
+
+const icons = [
+  {
+    title: "Books",
+    image: BASE_URL + "/icons/Book.svg"
+  },
+  {
+    title: "DVDs",
+    image: BASE_URL + "/icons/DVD.svg"
+  },
+  {
+    title: "CDs",
+    image: BASE_URL + "/icons/CD.svg"
+  },
+  {
+    title: "Magazines",
+    image: BASE_URL + "/icons/Magazine.svg"
+  }
+]
 
 const donations = ["Books", "DVDs", "CDs", "Magazines"];
 
@@ -66,6 +94,7 @@ export default {
     return {
       content,
       donations,
+      icons
     };
   },
 };
