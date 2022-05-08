@@ -17,7 +17,32 @@
         :items="[content[0], content[1], content[0], content[1]]"
         class="mb-6"
       />
-      <Table> </Table>
+      <table class="table-fixed border-2 rounded-xl">
+        <thead class="bg-accent-lightest">
+          <tr>
+            <th>Type 1 (Government Issued)</th>
+            <th>Type 2 (Name)</th>
+            <th>Type 3 (Address)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Driver's License</td>
+            <td>Driver's License</td>
+            <td>Driver's License</td>
+          </tr>
+          <tr>
+            <td>Driver's License</td>
+            <td>Driver's License</td>
+            <td>Driver's License</td>
+          </tr>
+          <tr>
+            <td>Driver's License</td>
+            <td>Driver's License</td>
+            <td>Driver's License</td>
+          </tr>
+        </tbody>
+      </table>
       <h3 class="mb-2 text-2xl">Visitor Cards</h3>
       <ArrowList :items="[content[0], content[1]]" class="mb-6" />
       <h3 class="mb-2 text-2xl">Online Library Card</h3>

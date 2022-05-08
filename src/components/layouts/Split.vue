@@ -9,7 +9,7 @@
         <p :class="dark && 'text-white'">
           <span class="mt-12" v-html="description"></span>
         </p>
-        <Button class="mt-8 btn-light rounded-lg">Learn More</Button>
+        <Button :class="button && `mt-8 btn-light rounded-lg`">Learn More</Button>
         <slot name="extra-content"></slot>
       </section>
       <section>
@@ -49,6 +49,10 @@ export default {
     date: {
       type: String,
       default: "January 1, 2020",
+    },
+    button: {
+      type: Boolean,
+      default: false,
     },
   },
 };

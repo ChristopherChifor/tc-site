@@ -6,6 +6,7 @@
     title="Our Mission"
     description="Teck Centennial Public Library provides free access to information, ideas, resources, facilities, services and programs that enrich the lives and empower the citizens of Kirkland Lake."
     flip
+    button
   >
     <img src="@/assets/images/headphone-woman.png" alt="woman headphones" />
   </Split>
@@ -13,6 +14,7 @@
   <!-- Split -->
   <Split
     title="Our Vision"
+    button="False"
     description="Teck Centennial Public Library aims to enrich, engage, and encourage all residents in their pursuit of life-long learning and cultural community development."
   >
     <img src="@/assets/images/group-read.png" alt="group reading" />
