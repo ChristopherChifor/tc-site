@@ -50,6 +50,7 @@ import Header from "@/components/base/Header";
 import Split from "@/components/layouts/Split.vue";
 import Container from "@/components/layouts/Container.vue";
 
+
 const values = [
   "Intellectual Freedom",
   "Literacy and Life-Long Learning",
@@ -58,6 +59,33 @@ const values = [
   "Community Relations",
   "Accountability",
   "Accountability",
+];
+const BASE_URL = "/teck-centennial-website/";
+const announcements = [
+  {
+    title: "New Library Announcement",
+    description:
+      "Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.",
+    img: BASE_URL + "/images/woman-laptop.png",
+    author: "Cindy Centennial",
+    date: "Apr 7, 2022",
+  },
+  {
+    title: "New Library Announcement",
+    description:
+      "Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.",
+    img: BASE_URL + "/images/woman-laptop.png",
+    author: "Cindy Centennial",
+    date: "Apr 7, 2022",
+  },
+  {
+    title: "New Library Announcement",
+    description:
+      "Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.",
+    img: "/images/woman-laptop.png",
+    author: "Cindy Centennial",
+    date: "Apr 7, 2022",
+  },
 ];
 
 export default {
@@ -69,6 +97,7 @@ export default {
   data() {
     return {
       values,
+      announcements,
     };
   },
 };

@@ -1,14 +1,22 @@
 <template>
-  <Header title="announcements/:id" />
+  <Header></Header>
+  <Container>
+    <h2>New Library Announcement</h2>
+    <p class="mb-12">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Senectus molestie
+    </p></Container
+  >
 </template>
 
 <script>
-import Header from "@/components/base/Header";
+import Header from "../../../components/base/Header.vue";
+import Container from "../../../components/layouts/Container.vue";
 
 import { announcements } from "@/data";
 
 export default {
   components: {
+    Container,
     Header,
   },
   data() {
@@ -20,7 +28,9 @@ export default {
 
   watch: {
     $route() {
-      this.item = announcements.find((item) => item.id === this.$route.params.id);
+      this.item = announcements.find(
+        (item) => item.id === this.$route.params.id
+      );
     },
   },
 };
