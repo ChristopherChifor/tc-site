@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-white" aria-labelledby="footer-heading">
+  <footer class="bg-accent" aria-labelledby="footer-heading">
     <h2 id="footer-heading" class="sr-only">Footer</h2>
     <div class="max-w-7xl mx-auto py-12 pb-8 px-4 sm:px-6 lg:px-8">
       <div class="grid md:grid-cols-2 gap-8">
@@ -56,7 +56,7 @@
         "
       >
         <p class="text-base text-gray-400">
-          &copy; Copyright 2021 Company Name
+          Teck Centennial Public Library &copy; 2022
         </p>
       </div>
     </div>
