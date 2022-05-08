@@ -4,6 +4,7 @@
   <Container>
     <h2 class="text-center font-bold">Staff Members</h2>
     <div class="flex flex-wrap justify-evenly">
+
       <div
         v-for="name in staffNames"
         :key="name"
