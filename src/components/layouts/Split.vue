@@ -3,11 +3,19 @@
     <div class="grid gap-x-8 gap-y-12 lg:grid-cols-2">
       <section :class="flip && `lg:order-1`" class="lg:py-12">
         <h2 :class="dark && 'text-white'">{{ title }}</h2>
-        <p :class="dark && 'text-white'"><span v-html="description"></span></p>
+        <p :class="dark && 'text-white'">
+          <span v-html="date"></span>
+        </p>
+        <p :class="dark && 'text-white'">
+          <span class="mt-12" v-html="description"></span>
+        </p>
+        <Button class="mt-8 btn-light rounded-lg">Learn More</Button>
         <slot name="extra-content"></slot>
       </section>
       <section>
-        <div class="split-img-wrapper w-full h-full rounded-2xl overflow-hidden">
+        <div
+          class="split-img-wrapper w-full h-full rounded-2xl overflow-hidden"
+        >
           <slot></slot>
         </div>
       </section>
@@ -16,10 +24,11 @@
 </template>
 
 <script>
+import Button from "../base/Button.vue";
 import Container from "@/components/layouts/Container.vue";
 
 export default {
-  components: { Container },
+  components: { Container, Button },
   props: {
     title: {
       type: String,
@@ -36,6 +45,10 @@ export default {
     dark: {
       type: Boolean,
       default: false,
+    },
+    date: {
+      type: String,
+      default: "January 1, 2020",
     },
   },
 };

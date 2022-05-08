@@ -26,7 +26,7 @@
         >
         </div> -->
         <div class="h-36 w-full grid place-items-center mb-4">
-          <img :src="item.image" :key="index" class="max-w-xs" />
+          <img :src="item.image" :key="index" class="object-fill max-w-xs" />
         </div>
         <h3 class="text-lg mb-1">{{ item.title }}</h3>
         <p class="text-sm max-w-sm">
@@ -126,70 +126,70 @@ const items = [
 const resources = [
   {
     title: "InterLibrary Loan",
-    image: BASE_URL + "/images/EBSCO.png",
+    image: BASE_URL + "/icons/Loan.svg",
 
     description:
       "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
   },
   {
     title: "Mobile Services",
-    image: BASE_URL + "/images/EBSCO.png",
+    image: BASE_URL + "/icons/Mobile.svg",
 
     description:
       "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
   },
   {
     title: "Tech Support",
-    image: BASE_URL + "/images/EBSCO.png",
+    image: BASE_URL + "/icons/Support.svg",
 
     description:
       "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
   },
   {
     title: "Exam Proctoring",
-    image: BASE_URL + "/images/EBSCO.png",
+    image: BASE_URL + "/icons/Proctor.svg",
 
     description:
       "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
   },
   {
     title: "1 Week Rentals",
-    image: BASE_URL + "/images/EBSCO.png",
+    image: BASE_URL + "/icons/Rental.svg",
 
     description:
       "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
   },
   {
     title: "Faxing",
-    image: BASE_URL + "/images/EBSCO.png",
+    image: BASE_URL + "/icons/Fax.svg",
 
     description:
       "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
   },
   {
     title: "Family History",
-    image: BASE_URL + "/images/EBSCO.png",
+    image: BASE_URL + "/icons/Family.svg",
 
     description:
       "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
   },
   {
     title: "Printing",
-    image: BASE_URL + "/images/EBSCO.png",
+    image: BASE_URL + "/icons/Print.svg",
 
     description:
       "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
   },
   {
     title: "Rent Our Board Room",
-    image: BASE_URL + "/images/EBSCO.png",
+    image: BASE_URL + "/icons/board-room.svg",
 
     description:
       "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
   },
   {
     title: "Laminating",
-    image: BASE_URL + "/images/EBSCO.png",
+    image: BASE_URL + "/icons/Laminate.svg",
 
     description:
       "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",

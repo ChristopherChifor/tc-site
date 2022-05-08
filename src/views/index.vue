@@ -41,7 +41,7 @@
 </template>
 
 <script>
-import HeroImageOverlay from '../components/layouts/hero/HeroImageOverlay.vue'
+import HeroImageOverlay from "../components/layouts/hero/HeroImageOverlay.vue";
 import Container from "../components/layouts/Container.vue";
 import Header from "@/components/base/Header";
 
@@ -97,7 +97,8 @@ const announcements = [
 export default {
   components: {
     Header,
-    Container, HeroImageOverlay
+    Container,
+    HeroImageOverlay,
   },
   data() {
     return {
