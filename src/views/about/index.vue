@@ -50,7 +50,6 @@ import Header from "@/components/base/Header";
 import Split from "@/components/layouts/Split.vue";
 import Container from "@/components/layouts/Container.vue";
 
-
 const values = [
   "Intellectual Freedom",
   "Literacy and Life-Long Learning",
