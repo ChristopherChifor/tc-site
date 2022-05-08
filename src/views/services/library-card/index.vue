@@ -40,6 +40,7 @@ import ArrowList from "../../../components/base/ArrowList.vue";
 import Container from "../../../components/layouts/Container.vue";
 import Header from "@/components/base/Header";
 import Button from "../../../components/base/Button.vue";
+import { ArrowRightIcon } from "@heroicons/vue/solid";
 
 const content = [
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, accusamus!",
@@ -55,6 +56,7 @@ export default {
     Container,
     ArrowList,
     Button,
+    ArrowRightIcon,
   },
   data() {
     return {
