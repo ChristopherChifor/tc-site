@@ -76,8 +76,8 @@ const MASTER_ROUTES = [
     hidden: false,
   },
   {
-    path: "/announcements/:id",
-    label: "announcements/:id",
+    path: "/announcements/id",
+    label: "announcements/id",
     component: () => import("@/views/announcements/id"),
     hidden: false,
   },

@@ -13,7 +13,7 @@
       </p>
     </div>
 
-    <div class="mt-8 grid gap-12 md:gap-4 lg:grid-cols-2 xl:grid-cols-4">
+    <div class="mt-8 grid gap-12 md:gap-4 md:grid-cols-2 xl:grid-cols-4">
       <div
         v-for="(item, index) in items"
         :key="index"
@@ -26,7 +26,7 @@
         >
         </div> -->
         <div class="h-36 w-full grid place-items-center mb-4">
-          <img :src="item.image" :key="index" class="object-fill max-w-xs" />
+          <img :src="item.image" :key="index" class="object-contain max-w-xs" />
         </div>
         <h3 class="text-lg mb-1">{{ item.title }}</h3>
         <p class="text-sm max-w-sm">
@@ -38,12 +38,12 @@
   <Container class="bg-accent-lightest">
     <div class="text-center flex flex-col items-center">
       <h2 class="mb-3">On-Site Resources</h2>
-      <p class="max-w-md mb-16">
+      <p class="max-w-md mb-8">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
         asperiores nihil cupiditate maxime, at sunt.
       </p>
     </div>
-    <div class="flex flex-wrap justify-evenly">
+    <div class="grid sm:grid-cols-2 lg:flex lg:flex-wrap lg:justify-evenly">
       <div
         v-for="resource in resources"
         :key="resource"
@@ -57,8 +57,8 @@
         "
       >
         <img :src="resource.image" alt="" class="w-16 h-16 mb-4" />
-        <h3 class="text-xl w-48 text-center">{{ resource.title }}</h3>
-        <p class="text-sm text-center">
+        <h3 class="text-xl w-48 mb-2 text-center">{{ resource.title }}</h3>
+        <p class="text-sm text-center max-w-xs">
           {{ resource.description }}
         </p>
       </div>

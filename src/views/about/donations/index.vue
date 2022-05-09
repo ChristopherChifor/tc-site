@@ -10,10 +10,7 @@
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam porro enim
       laborum nam velit blanditiis.
     </p>
-    <ArrowList
-      :items="[content[0], content[1], content[0], content[1]]"
-      class="mb-6"
-    />
+    <ArrowList :items="[...content, ...content]" class="mb-6" />
 
     <h2>What Do We Accept?</h2>
     <p>
@@ -27,12 +24,7 @@
           :key="index"
           class="flex flex-col items-center justify-center flex-shrink-0"
         >
-          <img
-            :src="item.image"
-            :key="index"
-            alt=""
-            class="w-16 h-16 mb-4 "
-          />
+          <img :src="item.image" :key="index" alt="" class="w-16 h-16 mb-4" />
           <h3 class="text-xl w- text-center">{{ item.title }}</h3>
         </div>
       </div>
@@ -44,7 +36,12 @@
     />
     <h2>What happens to Donated Materials?</h2>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat a leo sit amet commodo. Ut ac tempus leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean nibh libero, malesuada non semper id, tempus vitae turpis. Donec tristique elementum odio sit amet interdum. Quisque molestie metus sed auctor molestie.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat
+      a leo sit amet commodo. Ut ac tempus leo. Class aptent taciti sociosqu ad
+      litora torquent per conubia nostra, per inceptos himenaeos. Aenean nibh
+      libero, malesuada non semper id, tempus vitae turpis. Donec tristique
+      elementum odio sit amet interdum. Quisque molestie metus sed auctor
+      molestie.
     </p>
   </Container>
 </template>
@@ -60,26 +57,26 @@ const content = [
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat a leo sit amet commodo. Ut ac tempus leo. Class aptent taciti sociosqu ad",
 ];
 
-const BASE_URL = "/teck-centennial-website/"
+const BASE_URL = "/teck-centennial-website/";
 
 const icons = [
   {
     title: "Books",
-    image: BASE_URL + "/icons/Book.svg"
+    image: BASE_URL + "/icons/Book.svg",
   },
   {
     title: "DVDs",
-    image: BASE_URL + "/icons/DVD.svg"
+    image: BASE_URL + "/icons/DVD.svg",
   },
   {
     title: "CDs",
-    image: BASE_URL + "/icons/CD.svg"
+    image: BASE_URL + "/icons/CD.svg",
   },
   {
     title: "Magazines",
-    image: BASE_URL + "/icons/Magazine.svg"
-  }
-]
+    image: BASE_URL + "/icons/Magazine.svg",
+  },
+];
 
 const donations = ["Books", "DVDs", "CDs", "Magazines"];
 
@@ -94,7 +91,7 @@ export default {
     return {
       content,
       donations,
-      icons
+      icons,
     };
   },
 };

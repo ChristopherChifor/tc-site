@@ -6,8 +6,12 @@
     title="Our Mission"
     description="Teck Centennial Public Library provides free access to information, ideas, resources, facilities, services and programs that enrich the lives and empower the citizens of Kirkland Lake."
     flip
-    button
   >
+    <!-- <template v-slot:extra-content>
+        <router-link to="/policies" class="btn btn-xl">
+          Hello Wolrd
+        </router-link>
+    </template> -->
     <img src="@/assets/images/headphone-woman.png" alt="woman headphones" />
   </Split>
 

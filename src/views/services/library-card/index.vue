@@ -17,32 +17,8 @@
         :items="[content[0], content[1], content[0], content[1]]"
         class="mb-6"
       />
-      <table class="table-fixed border-2 rounded-xl">
-        <thead class="bg-accent-lightest">
-          <tr>
-            <th>Type 1 (Government Issued)</th>
-            <th>Type 2 (Name)</th>
-            <th>Type 3 (Address)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Driver's License</td>
-            <td>Driver's License</td>
-            <td>Driver's License</td>
-          </tr>
-          <tr>
-            <td>Driver's License</td>
-            <td>Driver's License</td>
-            <td>Driver's License</td>
-          </tr>
-          <tr>
-            <td>Driver's License</td>
-            <td>Driver's License</td>
-            <td>Driver's License</td>
-          </tr>
-        </tbody>
-      </table>
+
+      <SimpleStripedTable :headers="headers" :items="items" class="max-w-2xl" />
       <h3 class="mb-2 text-2xl">Visitor Cards</h3>
       <ArrowList :items="[content[0], content[1]]" class="mb-6" />
       <h3 class="mb-2 text-2xl">Online Library Card</h3>
@@ -56,7 +32,7 @@
         vulputate velit ipsum.
       </p>
     </div>
-    <Button class="mt-8 btn-light rounded-lg">Send Us An Email</Button>
+    <div class="btn btn-xl btn-light" to="/contact">Send us an email</div>
   </Container>
 </template>
 
@@ -66,6 +42,7 @@ import Container from "../../../components/layouts/Container.vue";
 import Header from "@/components/base/Header";
 import Button from "../../../components/base/Button.vue";
 import { ArrowRightIcon } from "@heroicons/vue/solid";
+import SimpleStripedTable from "../../../components/app/tables/SimpleStripedTable.vue";
 
 const content = [
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, accusamus!",
@@ -75,6 +52,36 @@ const content = [
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, accusamus!",
 ];
 
+const items = [
+  {
+    type1: "Driver's License",
+    type2: "Driver's License",
+    type3: "Driver's License",
+  },
+  {
+    type1: "Driver's License",
+    type2: "Driver's License",
+    type3: "Driver's License",
+  },
+  {
+    type1: "Driver's License",
+    type2: "Driver's License",
+    type3: "Driver's License",
+  },
+];
+
+const headers = [
+  {
+    label: "Type 1 (Government Issued)",
+  },
+  {
+    label: "Type 2 (Name)",
+  },
+  {
+    label: "Type 3 (Address)",
+  },
+];
+
 export default {
   components: {
     Header,
@@ -82,10 +89,13 @@ export default {
     ArrowList,
     Button,
     ArrowRightIcon,
+    SimpleStripedTable,
   },
   data() {
     return {
       content,
+      items,
+      headers,
     };
   },
 };

@@ -9,7 +9,7 @@
         <p :class="dark && 'text-white'">
           <span class="mt-12" v-html="description"></span>
         </p>
-        <Button :class="button && `mt-8 btn-light rounded-lg`">Learn More</Button>
+
         <slot name="extra-content"></slot>
       </section>
       <section>
@@ -24,11 +24,10 @@
 </template>
 
 <script>
-import Button from "../base/Button.vue";
 import Container from "@/components/layouts/Container.vue";
 
 export default {
-  components: { Container, Button },
+  components: { Container },
   props: {
     title: {
       type: String,
@@ -43,14 +42,6 @@ export default {
       default: false,
     },
     dark: {
-      type: Boolean,
-      default: false,
-    },
-    date: {
-      type: String,
-      default: "January 1, 2020",
-    },
-    button: {
       type: Boolean,
       default: false,
     },

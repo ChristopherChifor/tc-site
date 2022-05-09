@@ -1,9 +1,12 @@
 <template>
-  <Header title="about/staff" />
+  <Header
+    title="Staff & Board"
+    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Senectus molestie congue sit consectetur metus consectetur montes, amet."
+  />
 
   <Container>
     <h2 class="text-center font-bold">Staff Members</h2>
-    <div class="flex flex-wrap justify-evenly md: gap-10">
+    <div class="flex flex-wrap justify-evenly gap-10">
       <div
         v-for="name in staffNames"
         :key="name"
@@ -14,8 +17,8 @@
           alt="Staff member"
           class="w-16 h-16 mb-4 rounded-full object-cover"
         />
-        <h3 class="text-xl w- text-center text-accent">{{ name }}</h3>
-        <p class="text-center -mt-6">Position title</p>
+        <h3 class="text-xl text-center text-accent mb-0">{{ name }}</h3>
+        <p class="text-center">Position title</p>
       </div>
     </div>
   </Container>

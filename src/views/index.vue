@@ -24,19 +24,7 @@
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Senectus molestie
       congue sit consectetur metus consectetur.
     </p>
-    <div class="grid md:grid-cols-3 gap-12">
-      <div
-        v-for="announcement in announcements"
-        :key="announcement.title"
-        class="flex flex-col"
-      >
-        <img :src="announcement.img" alt="" class="mb-6 rounded-xl" />
-        <h4>{{ announcement.title }}</h4>
-        <p>{{ announcement.description }}</p>
-        <p class="mt-2 font-bold text-black">{{ announcement.author }}</p>
-        <p>{{ announcement.date }}</p>
-      </div>
-    </div>
+    <AnnouncementsCards />
   </Container>
 </template>
 
@@ -44,6 +32,7 @@
 import HeroImageOverlay from "../components/layouts/hero/HeroImageOverlay.vue";
 import Container from "../components/layouts/Container.vue";
 import Header from "@/components/base/Header";
+import AnnouncementsCards from "../components/app/AnnouncementsCards.vue";
 
 const BASE_URL = "/teck-centennial-website/";
 const items = [
@@ -99,7 +88,8 @@ export default {
     Header,
     Container,
     HeroImageOverlay,
-  },
+    AnnouncementsCards
+},
   data() {
     return {
       items,

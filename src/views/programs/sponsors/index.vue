@@ -14,38 +14,17 @@
       auctor mauris nunc at dolor. Quisque tristique purus in sem egestas
       rutrum. Donec commodo ipsum pulvinar turpis semper auctor. Curabitur sed.
     </p>
-    <div class="flex space-x-10 mt-8">
-      <div class="text-xl flex flex-col w-full">
-        <div v-for="name in Sponsors" :key="name" class="flex">
-          <div class="flex">
-            <img src="@/assets/icons/star.svg" alt="" class="w-4 h-4" />
-            <h3 class="text-sm text-center ml-2 text-accent">{{ name }}</h3>
-          </div>
-        </div>
-      </div>
-      <div class="flex flex-col w-full">
-        <div v-for="name in Sponsors" :key="name" class="flex">
-          <div class="flex">
-            <img src="@/assets/icons/star.svg" alt="" class="w-4 h-4" />
-            <h3 class="text-sm text-center ml-2 text-accent">{{ name }}</h3>
-          </div>
-        </div>
-      </div>
-      <div class="flex flex-col w-full">
-        <div v-for="name in Sponsors" :key="name" class="flex">
-          <div class="flex">
-            <img src="@/assets/icons/star.svg" alt="" class="w-4 h-4" />
-            <h3 class="text-sm text-center ml-2 text-accent">{{ name }}</h3>
-          </div>
-        </div>
-      </div>
-      <div class="flex flex-col w-full">
-        <div v-for="name in Sponsors" :key="name" class="flex">
-          <div class="flex">
-            <img src="@/assets/icons/star.svg" alt="" class="w-4 h-4" />
-            <h3 class="text-sm text-center ml-2 text-accent">{{ name }}</h3>
-          </div>
-        </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-2 mt-4">
+      <div
+        v-for="(sponsor, index) in sponsors"
+        :key="index"
+        class="flex items-center"
+      >
+        <StarIcon class="w-4 h-4 mr-2 text-accent flex-shrink-0" />
+        <span>
+          {{ sponsor }}
+        </span>
       </div>
     </div>
   </Container>
@@ -54,8 +33,22 @@
 <script>
 import Container from "../../../components/layouts/Container.vue";
 import Header from "@/components/base/Header";
+import { StarIcon } from "@heroicons/vue/solid";
 
-const Sponsors = [
+const sponsors = [
+  "Sponsor Name",
+  "Sponsor Name",
+  "Sponsor Name",
+  "Sponsor Name",
+  "Sponsor Name",
+  "Sponsor Name",
+  "Sponsor Name",
+  "Sponsor Name",
+  "Sponsor Name",
+  "Sponsor Name",
+  "Sponsor Name",
+  "Sponsor Name",
+  "Sponsor Name",
   "Sponsor Name",
   "Sponsor Name",
   "Sponsor Name",
@@ -69,10 +62,11 @@ export default {
   components: {
     Header,
     Container,
+    StarIcon,
   },
   data() {
     return {
-      Sponsors,
+      sponsors,
     };
   },
 };

@@ -1,14 +1,9 @@
 <template>
-  <Header></Header>
-  <Container>
-    <h2>New Library Announcement</h2>
-    <p class="mb-12">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Senectus molestie
-    </p></Container
-  >
+  <BlogContent />
 </template>
 
 <script>
+import BlogContent from '../../../components/layouts/blog/BlogContent.vue'
 import Header from "../../../components/base/Header.vue";
 import Container from "../../../components/layouts/Container.vue";
 
@@ -17,7 +12,7 @@ import { announcements } from "@/data";
 export default {
   components: {
     Container,
-    Header,
+    Header, BlogContent
   },
   data() {
     return {
